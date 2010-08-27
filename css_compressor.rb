@@ -7,12 +7,11 @@ class CssCompressor
 	def compress_to(destination)
 		@output = File.new(destination, 'w')
 		# Parse file
-		# Remove all /* */ lines
+		# Remove all /* */ lines and blank lines
 		@file.each_line do |f|
 			if (f.scan("/*").empty?) && (/\S/ =~ f)
 				@output << f
 			end
 		end
-		# Remove all blank lines
 	end
 end
