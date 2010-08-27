@@ -1,0 +1,2 @@
+= Use
+For a sample run, simply run the test_css_compressor script.  It will load sample.css and output to out.css
