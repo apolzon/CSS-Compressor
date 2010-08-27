@@ -13,5 +13,6 @@ class CssCompressor
 				@output << f
 			end
 		end
+		@output.close
 	end
 end
